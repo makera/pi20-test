@@ -1,0 +1,134 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #2E015C;
+    overflow: hidden;
+}
+
+.wrapp {
+    width: 1095px;
+    height: 813px;
+    max-width: 95vw;
+    max-height: 95vh;
+    position: relative;
+}
+
+.leafs1 {
+    position: absolute;
+    bottom: 20px;
+    left: -272px;
+}
+
+.leafs2 {
+    position: absolute;
+    top: -48px;
+    right: -240px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(241.84deg, #003DCE -3.61%, rgba(21, 170, 255, 0) 48.73%, rgba(20, 164, 252, 0.0598291) 48.74%, #003DCE 95.39%), linear-gradient(37.63deg, #2B62D5 5.17%, #15AAFF 59.05%);
+    border-radius: 51px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 73px 82px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.link {
+    flex: 1 1 100%;
+    background: #0096EC;
+    height: 6px;
+}
+
+.link::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background: #0096EC;
+}
+
+.link:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+.link:first-child::before {
+    display: none;
+}
+
+.link:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+.link__active {
+    background: #6BFF2F;
+}
+
+.text {
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 589px;
+    margin: 0 auto;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image {
+    background: #004BAA;
+    border-radius: 26px;
+}
+
+.image img {
+    border-radius: 26px;
+    display: block;
+    transition: 0.5s;
+}
+
+.image:hover img {
+    transform: translate(-10px, -12px);
+}
+
+@media (max-width: 1024px) {
+    .main {
+        height: auto;
+        min-height: 100vh;
+    }
+    .wrapp {
+        height: auto;
+        max-height: none;
+    }
+    .content {
+        height: auto;
+    }
+    .images {
+        flex-wrap: wrap;
+    }
+    .image {
+        margin-bottom: 20px;
+    }
+    .text {
+        margin: 40px auto;
+    }
+}
