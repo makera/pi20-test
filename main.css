@@ -138,6 +138,11 @@
     outline: 10px solid #FF0F8E;
 }
 
+.image__success img,
+.image__failure img {
+    transition: 0s;
+}
+
 .image__success::before,
 .image__failure::before {
     content: '';
