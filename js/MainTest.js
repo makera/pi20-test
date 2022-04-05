@@ -15,6 +15,12 @@ export default {
                     images: ['/imgs/var1.jpg', '/imgs/var2.jpg', '/imgs/var3.jpg', '/imgs/var4.jpg'],
                     answer: 'Верный ответ такой-то.',
                     correct: 2
+                },
+                {
+                    question: 'Начинаем с простенького. Судя по мультфильму, Чебурашка и Гена много гуляли и ходили пешком. А вот если бы они устали, то могли бы спокойно воспользоваться любым другим способом передвижения, кроме одного. Какого?',
+                    images: ['/imgs/var1.jpg', '/imgs/var2.jpg', '/imgs/var3.jpg', '/imgs/var4.jpg'],
+                    answer: 'Верный ответ такой-то.',
+                    correct: 2
                 }
             ],
             total: 0,
@@ -33,6 +39,7 @@ export default {
         },
         handleNext() {
             this.current += 1
+            this.answer = null
         }
     },
     template: `
